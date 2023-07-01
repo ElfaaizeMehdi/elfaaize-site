@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Elfaaize</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+        body{
+            
+            background-image: 
+            linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(iii\ \(2\).jpg);
+            background-position: center;
+            background-size: cover;
+            height:100vh; 
+            background-repeat: no-repeat;
+            
+        }
+        .container{
+            position:relative;
+            left:35%;
+            top:20%;
+            display:grid;
+            place-items:center;
+            width: 400px;
+            height:500px;
+            background-color: rgba(0, 0, 0, 0.232);
+            color:white;
+            font-family: sans-serif;
+            box-shadow: 10px 5px 10px  rgba(42, 63, 201, 0.882);
+            border-radius:20px;
+            overflow: hidden;
+            /*
+            clip-path:polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%,
+            0 100%, 0% 30px);*/
+        }
+        .container .me img{
+            width:  150px;
+            transition:0.4s ease-in-out
+        }
+        
+        .container .me img:hover{
+            width:250px;
+               
+        }
+        
+        .container p{
+            margin-bottom: 20px;
+            text-align: center;
+            max-width: 83%;
+            line-height:25px ;   
+            
+        }
+        .container h1:hover{
+            color: rgba(42, 63, 201, 0.882);
+            transition:0.4s all ; 
+        }
+        
+        .photos a img{
+            width:20px;
+            display:inline-block;
+            transition:0.4s all ; 
+        }
+        .photos{
+            position: absolute;
+            bottom:0;
+            
+        }
+        a {
+            padding:30px;
+        }
+        .photos a img:hover{
+            width: 30px;
+           
+        }
+        @media (max-width:650px){
+            .container{
+                position: absolute;
+                left:50px;
+                overflow: hidden;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="me"><img src="M.png" ></div>
+        
+        <h1>About Me</h1>
+        <p>I'm EL FAAIZE Mehdi , there is noting special about me , in fact , I'm studying
+            Commerce and Marketing at college (EST Fez) , but I decided to learn 
+            something new , something that can help people in futur , so my journey 
+            in coding has just begun , and maybe in futur I'll be able 
+            to create professional websites and mobile apps . 
+        </p>
+            <div class="photos">
+            <a href="https://www.instagram.com/elfaaize.mehdi/"><img src="instagram.png"></a>
+            <a href="https://web.facebook.com/faa.ize.9/?_rdc=1&_rdr"><img src="facebook.png"></a>
+            <a href="+212 770-283150"><img src="whatsapp.png"></a>
+            </div>
+        
+        
+    </div>
+    
+</body>
+</html>
